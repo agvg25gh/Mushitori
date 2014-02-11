@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTMParam.h"
 
-@interface HTMGameViewController : UIViewController
+@interface HTMGameViewController : UIViewController {
+
+    // インスタンス変数
+    @private HTMParam *_param;
+
+}
 
 @end

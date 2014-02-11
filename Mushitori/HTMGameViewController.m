@@ -7,12 +7,9 @@
 //
 
 #import "HTMGameViewController.h"
+#import "HTMKagoViewController.h"
 #import "HTMParam.h"
 
-
-@interface HTMGameViewController ()
-
-@end
 
 @implementation HTMGameViewController
 
@@ -20,7 +17,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -29,17 +25,31 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
-    
-    HTMParam *param = [[HTMParam alloc] init];
 
-    param.cho = true;
+    _param = [[HTMParam alloc] init];
+    _param.cho = YES;
+    _param.tonbo = YES;
+    _param.gameTime = @"12:10:09";
     
+    NSLog(@"cho : %d", _param.cho);
+    NSLog(@"cho : %d", _param.tonbo);
+    NSLog(@"cho : %@", _param.gameTime);
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+// 画面遷移での引数渡し
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    // 対象遷移のSegue取得
+    if( [[segue identifier] isEqualToString:@"showKago"]) {
+        HTMKagoViewController *kagoViewController = [segue destinationViewController];
+        kagoViewController.param = _param;
+    }
 }
 
 @end

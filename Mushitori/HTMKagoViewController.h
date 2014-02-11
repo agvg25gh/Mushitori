@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTMParam.h"
 
 @interface HTMKagoViewController : UIViewController
+- (IBAction)back:(UIButton *)sender;
+
+@property HTMParam *param;
 
 @end

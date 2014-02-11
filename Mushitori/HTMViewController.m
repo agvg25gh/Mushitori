@@ -8,9 +8,6 @@
 
 #import "HTMViewController.h"
 
-@interface HTMViewController ()
-
-@end
 
 @implementation HTMViewController
 

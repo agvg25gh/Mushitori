@@ -9,16 +9,15 @@
 #import <Foundation/Foundation.h>
 
 @interface HTMParam : NSObject {
-    bool    cho;
-    bool    hachi;
-    bool    tonbo;
-    bool    tento;
-    bool    suzume;
-    
-    NSString *gameTime;
+//    BOOL cho, hachi, tonbo, tento, suzume;
+//    NSString *gameTime;
 }
 
-@property bool cho, hachi, tonbo, tento, suzume;
-@property NSString *gameTime;
+// プロパティ
+@property BOOL cho, hachi, tonbo, tento, suzume;
+@property (retain) NSString *gameTime;
+
+// 初期化メソッド（コンストラクタ）
+- (id)init;
 
 @end

@@ -8,8 +8,25 @@
 
 #import "HTMParam.h"
 
+
 @implementation HTMParam
 
-@synthesize cho, hachi, tonbo, tento, suzume, gameTime;
+// getter/setter定義
+@synthesize cho, hachi, tonbo, tento, suzume;
+@synthesize gameTime;
+
+// 初期化メソッド定義
+- (id) init
+{
+    if (self = [super init]) {
+        self.cho = NO;
+        self.hachi = NO;
+        self.tonbo = NO;
+        self.tento = NO;
+        self.suzume = NO;
+        self.gameTime = @"";
+    }
+    return self;
+}
 
 @end
