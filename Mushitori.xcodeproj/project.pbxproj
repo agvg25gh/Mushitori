@@ -30,7 +30,8 @@
 		BF4F196718A609CF00E8583F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF4F196518A609CF00E8583F /* InfoPlist.strings */; };
 		BF4F196A18A609CF00E8583F /* MushitoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F196918A609CF00E8583F /* MushitoriTests.m */; };
 		BF60B5C618A68B7400F5546E /* HTMParam.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60B5C518A68B7400F5546E /* HTMParam.m */; };
-		BFB0275E18AD2344003BB640 /* hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB0275D18AD2344003BB640 /* hachi.png */; };
+		BF91B98018AD38010035391F /* tento.png in Resources */ = {isa = PBXBuildFile; fileRef = BF91B97F18AD38010035391F /* tento.png */; };
+		BF91B98218AD382B0035391F /* hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BF91B98118AD382B0035391F /* hachi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +77,8 @@
 		BF4F196918A609CF00E8583F /* MushitoriTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MushitoriTests.m; sourceTree = "<group>"; };
 		BF60B5C418A68B7400F5546E /* HTMParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMParam.h; sourceTree = "<group>"; };
 		BF60B5C518A68B7400F5546E /* HTMParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMParam.m; sourceTree = "<group>"; };
-		BFB0275D18AD2344003BB640 /* hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hachi.png; path = "../../../../Photos/虫とりゲーム画像/hachi.png"; sourceTree = "<group>"; };
+		BF91B97F18AD38010035391F /* tento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tento.png; sourceTree = "<group>"; };
+		BF91B98118AD382B0035391F /* hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hachi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +108,8 @@
 		BF279C7B18A620E60006C2A6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BFB0275D18AD2344003BB640 /* hachi.png */,
+				BF91B98118AD382B0035391F /* hachi.png */,
+				BF91B97F18AD38010035391F /* tento.png */,
 				BF279C7318A6206D0006C2A6 /* back.png */,
 				BF279C7518A6207C0006C2A6 /* cyo.png */,
 				BF279C7918A620930006C2A6 /* kago.png */,
@@ -275,8 +278,9 @@
 				BF4F194D18A609CF00E8583F /* Default@2x.png in Resources */,
 				BF4F194F18A609CF00E8583F /* Default-568h@2x.png in Resources */,
 				BF4F195218A609CF00E8583F /* MainStoryboard.storyboard in Resources */,
-				BFB0275E18AD2344003BB640 /* hachi.png in Resources */,
 				BF279C7418A6206D0006C2A6 /* back.png in Resources */,
+				BF91B98218AD382B0035391F /* hachi.png in Resources */,
+				BF91B98018AD38010035391F /* tento.png in Resources */,
 				BF279C7618A6207C0006C2A6 /* cyo.png in Resources */,
 				BF279C7818A620880006C2A6 /* kago_cyo.png in Resources */,
 				BF279C7A18A620930006C2A6 /* kago.png in Resources */,
