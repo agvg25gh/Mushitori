@@ -11,22 +11,31 @@
 
 @implementation HTMParam
 
-// getter/setter定義
+// プロパティ（アクセサ定義）
 @synthesize cho, hachi, tonbo, tento, suzume;
 @synthesize gameTime;
 
-// 初期化メソッド定義
+// 初期化（コンストラクタ）
 - (id) init
 {
     if (self = [super init]) {
-        self.cho = NO;
-        self.hachi = NO;
-        self.tonbo = NO;
-        self.tento = NO;
-        self.suzume = NO;
-        self.gameTime = @"";
+        cho = NO;
+        hachi = NO;
+        tonbo = NO;
+        tento = NO;
+        suzume = NO;
+        gameTime = @"";
     }
     return self;
+}
+
+// ゲームオーバー判定メソッド
+- (BOOL) isGameOver
+{
+    if (cho && hachi)
+        return YES;
+    else
+        return NO;
 }
 
 @end

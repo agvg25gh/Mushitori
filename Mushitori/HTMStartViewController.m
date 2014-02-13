@@ -6,10 +6,10 @@
 //  Copyright (c) 2014年 Team HTML. All rights reserved.
 //
 
-#import "HTMViewController.h"
+#import "HTMStartViewController.h"
 
 
-@implementation HTMViewController
+@implementation HTMStartViewController
 
 - (void)viewDidLoad
 {

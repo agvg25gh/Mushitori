@@ -15,5 +15,10 @@
     @private HTMParam *_param;
 
 }
+@property (weak, nonatomic) IBOutlet UIImageView *Cho;
+@property (weak, nonatomic) IBOutlet UIImageView *Hachi;
+@property (weak, nonatomic) IBOutlet UILabel *lblMsg;
+@property (weak, nonatomic) IBOutlet UIButton *btnReTry;
+- (IBAction)onReTryClick:(id)sender;
 
 @end

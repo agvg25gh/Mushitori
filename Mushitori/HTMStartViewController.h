@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HTMViewController : UIViewController
+@interface HTMStartViewController : UIViewController
 
 @end

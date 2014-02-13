@@ -8,16 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HTMParam : NSObject {
-//    BOOL cho, hachi, tonbo, tento, suzume;
-//    NSString *gameTime;
-}
+@interface HTMParam : NSObject
 
 // プロパティ
 @property BOOL cho, hachi, tonbo, tento, suzume;
 @property (retain) NSString *gameTime;
 
-// 初期化メソッド（コンストラクタ）
+// 初期化（コンストラクタ）
 - (id)init;
+
+- (BOOL)isGameOver;
 
 @end

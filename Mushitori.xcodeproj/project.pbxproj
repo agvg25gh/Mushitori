@@ -23,13 +23,14 @@
 		BF4F194D18A609CF00E8583F /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4F194C18A609CF00E8583F /* Default@2x.png */; };
 		BF4F194F18A609CF00E8583F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4F194E18A609CF00E8583F /* Default-568h@2x.png */; };
 		BF4F195218A609CF00E8583F /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF4F195018A609CF00E8583F /* MainStoryboard.storyboard */; };
-		BF4F195518A609CF00E8583F /* HTMViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F195418A609CF00E8583F /* HTMViewController.m */; };
+		BF4F195518A609CF00E8583F /* HTMStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F195418A609CF00E8583F /* HTMStartViewController.m */; };
 		BF4F195D18A609CF00E8583F /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4F195C18A609CF00E8583F /* SenTestingKit.framework */; };
 		BF4F195E18A609CF00E8583F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4F193818A609CE00E8583F /* UIKit.framework */; };
 		BF4F195F18A609CF00E8583F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4F193A18A609CE00E8583F /* Foundation.framework */; };
 		BF4F196718A609CF00E8583F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF4F196518A609CF00E8583F /* InfoPlist.strings */; };
 		BF4F196A18A609CF00E8583F /* MushitoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F196918A609CF00E8583F /* MushitoriTests.m */; };
 		BF60B5C618A68B7400F5546E /* HTMParam.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60B5C518A68B7400F5546E /* HTMParam.m */; };
+		BFB0275E18AD2344003BB640 /* hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BFB0275D18AD2344003BB640 /* hachi.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,8 +66,8 @@
 		BF4F194C18A609CF00E8583F /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		BF4F194E18A609CF00E8583F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		BF4F195118A609CF00E8583F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		BF4F195318A609CF00E8583F /* HTMViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMViewController.h; sourceTree = "<group>"; };
-		BF4F195418A609CF00E8583F /* HTMViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMViewController.m; sourceTree = "<group>"; };
+		BF4F195318A609CF00E8583F /* HTMStartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HTMStartViewController.h; sourceTree = "<group>"; };
+		BF4F195418A609CF00E8583F /* HTMStartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HTMStartViewController.m; sourceTree = "<group>"; };
 		BF4F195B18A609CF00E8583F /* MushitoriTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MushitoriTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF4F195C18A609CF00E8583F /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
 		BF4F196418A609CF00E8583F /* MushitoriTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MushitoriTests-Info.plist"; sourceTree = "<group>"; };
@@ -75,6 +76,7 @@
 		BF4F196918A609CF00E8583F /* MushitoriTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MushitoriTests.m; sourceTree = "<group>"; };
 		BF60B5C418A68B7400F5546E /* HTMParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMParam.h; sourceTree = "<group>"; };
 		BF60B5C518A68B7400F5546E /* HTMParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMParam.m; sourceTree = "<group>"; };
+		BFB0275D18AD2344003BB640 /* hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = hachi.png; path = "../../../../Photos/虫とりゲーム画像/hachi.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 		BF279C7B18A620E60006C2A6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BFB0275D18AD2344003BB640 /* hachi.png */,
 				BF279C7318A6206D0006C2A6 /* back.png */,
 				BF279C7518A6207C0006C2A6 /* cyo.png */,
 				BF279C7918A620930006C2A6 /* kago.png */,
@@ -154,8 +157,8 @@
 				BF1B737F18A60A210063D355 /* HTMKagoViewController.h */,
 				BF1B738018A60A210063D355 /* HTMKagoViewController.m */,
 				BF4F195018A609CF00E8583F /* MainStoryboard.storyboard */,
-				BF4F195318A609CF00E8583F /* HTMViewController.h */,
-				BF4F195418A609CF00E8583F /* HTMViewController.m */,
+				BF4F195318A609CF00E8583F /* HTMStartViewController.h */,
+				BF4F195418A609CF00E8583F /* HTMStartViewController.m */,
 				BF60B5C418A68B7400F5546E /* HTMParam.h */,
 				BF60B5C518A68B7400F5546E /* HTMParam.m */,
 			);
@@ -272,6 +275,7 @@
 				BF4F194D18A609CF00E8583F /* Default@2x.png in Resources */,
 				BF4F194F18A609CF00E8583F /* Default-568h@2x.png in Resources */,
 				BF4F195218A609CF00E8583F /* MainStoryboard.storyboard in Resources */,
+				BFB0275E18AD2344003BB640 /* hachi.png in Resources */,
 				BF279C7418A6206D0006C2A6 /* back.png in Resources */,
 				BF279C7618A6207C0006C2A6 /* cyo.png in Resources */,
 				BF279C7818A620880006C2A6 /* kago_cyo.png in Resources */,
@@ -313,7 +317,7 @@
 				BF4F194518A609CF00E8583F /* main.m in Sources */,
 				BF60B5C618A68B7400F5546E /* HTMParam.m in Sources */,
 				BF4F194918A609CF00E8583F /* HTMAppDelegate.m in Sources */,
-				BF4F195518A609CF00E8583F /* HTMViewController.m in Sources */,
+				BF4F195518A609CF00E8583F /* HTMStartViewController.m in Sources */,
 				BF1B738118A60A210063D355 /* HTMKagoViewController.m in Sources */,
 				BF40165D18A60E4D00F52ACD /* HTMGameViewController.m in Sources */,
 			);
