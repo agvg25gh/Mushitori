@@ -10,11 +10,12 @@
 #import "HTMParam.h"
 
 @interface HTMGameViewController : UIViewController {
-
     // インスタンス変数
-    @private HTMParam *_param;
-
+    HTMParam *_param;
+    NSTimer *_timer;
+    UIImageView *_activeView;
 }
+@property (strong, nonatomic) IBOutlet UIView *BaseView;
 @property (weak, nonatomic) IBOutlet UIImageView *Cho;
 @property (weak, nonatomic) IBOutlet UIImageView *Hachi;
 @property (weak, nonatomic) IBOutlet UILabel *lblMsg;

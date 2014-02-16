@@ -150,11 +150,11 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="sa9-Ib-FiJ" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="246" id="22E-sq-mYk"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="trailing" secondItem="JMO-eb-yjj" secondAttribute="trailing" type="default" id="4Ut-ug-MAo"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="leading" secondItem="JMO-eb-yjj" secondAttribute="leading" type="default" id="6EI-Yf-iol"/>
                             <constraint firstItem="vYf-Vp-Qfb" firstAttribute="leading" secondItem="JMO-eb-yjj" secondAttribute="leading" constant="40" id="7qn-Y4-YHq"/>
-                            <constraint firstItem="sa9-Ib-FiJ" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="246" id="Cfh-Ug-1ez"/>
-                            <constraint firstAttribute="trailing" secondItem="GHK-ay-kOt" secondAttribute="trailing" constant="43" id="Chh-6e-z15"/>
+                            <constraint firstAttribute="trailing" secondItem="GHK-ay-kOt" secondAttribute="trailing" constant="43" id="BCK-xT-zml"/>
                             <constraint firstItem="vYf-Vp-Qfb" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="114" id="EMJ-0E-Fp6"/>
                             <constraint firstItem="pVA-eQ-UIP" firstAttribute="bottom" secondItem="O7X-yg-5lg" secondAttribute="bottom" type="default" id="H9P-ZI-Sfh"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="bottom" secondItem="JMO-eb-yjj" secondAttribute="bottom" type="default" id="LZ5-dd-aun"/>
@@ -167,6 +167,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="BaseView" destination="JMO-eb-yjj" id="8wM-pL-3gw"/>
                         <outlet property="Cho" destination="vYf-Vp-Qfb" id="1VP-iY-V5G"/>
                         <outlet property="Hachi" destination="GHK-ay-kOt" id="1Bm-0Q-A0I"/>
                         <outlet property="btnReTry" destination="pVA-eQ-UIP" id="5fV-Vl-FeB"/>

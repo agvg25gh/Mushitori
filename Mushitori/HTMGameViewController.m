@@ -26,10 +26,10 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
 
-//    NSTimer *tm = [NSTimer scheduledTimerWithTimeInterval:1.5f
-//                                                   target:self
-//                                                 selector:@selector(hoge:)
-//                                                 userInfo:nil repeats:YES];
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                                   target:self
+                                                 selector:@selector(procMove:)
+                                                 userInfo:nil repeats:YES];
 
     // ゲーム初期化
     [self initGame];
@@ -50,12 +50,30 @@
     _btnReTry.enabled = NO;
     
     _Cho.hidden = NO;
-    _Hachi.hidden = NO;
+    _Hachi.hidden = YES;
+    
+    _activeView = _Cho;
 }
 
 
--(void)hoge:(NSTimer *)timer {
+-(void)procMove:(NSTimer *)timer {
     NSLog(@"ここで虫用のImageViewの位置を動かす");
+
+    UIScreen *screen = [UIScreen mainScreen];
+    CGRect rect = screen.applicationFrame;
+
+    NSLog(@"%.2f, %.2f", rect.size.width, rect.size.height);
+    
+    //乱数発生
+    int x, y;
+    x = arc4random() % (int)rect.size.width;
+    y = arc4random() % (int)rect.size.height;
+    
+    CGPoint pos = CGPointMake(x, y);
+
+    _activeView.center = pos;
+    _lblMsg.text = @"";
+
 }
 
 
@@ -89,6 +107,8 @@
             _param.cho = YES;
             _lblMsg.text = @"捕獲した！";
             _Cho.hidden = YES;
+            _Hachi.hidden = NO;
+            _activeView = _Hachi;
             break;
         case 2:
             _param.hachi = YES;
