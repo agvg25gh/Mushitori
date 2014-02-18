@@ -8,11 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-@interface HTMParam : NSObject
+@interface HTMGameState : NSObject
 
 // プロパティ
-@property BOOL cho, hachi, tonbo, tento, suzume;
-@property (retain) NSString *gameTime;
+@property BOOL haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeHachi;
+@property NSTimeInterval time;
 
 // 初期化（コンストラクタ）
 - (id)init;

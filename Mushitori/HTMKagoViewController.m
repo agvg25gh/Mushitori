@@ -7,12 +7,12 @@
 //
 
 #import "HTMKagoViewController.h"
-#import "HTMParam.h"
+#import "HTMGameState.h"
 
 
 @implementation HTMKagoViewController
 
-@synthesize param;
+@synthesize state;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,12 +28,12 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    NSLog(@"蝶フラグ：%d", self.param.cho);
-    NSLog(@"蜂フラグ：%d", self.param.hachi);
-    NSLog(@"トンボフラグ：%d", self.param.tonbo);
-    NSLog(@"テントウフラグ：%d", self.param.tento);
-    NSLog(@"スズメ蜂フラグ：%d", self.param.suzume);
-    NSLog(@"タイム：%@", self.param.gameTime);
+    LOG(@"蝶フラグ：%d", self.state.haveCho);
+    LOG(@"蜂フラグ：%d", self.state.haveHachi);
+    LOG(@"トンボフラグ：%d", self.state.haveTonbo);
+    LOG(@"テントウフラグ：%d", self.state.haveTento);
+    LOG(@"スズメ蜂フラグ：%d", self.state.haveSuzumeHachi);
+    LOG(@"タイム：%.1f 秒", self.state.time);
 }
 
 - (void)didReceiveMemoryWarning

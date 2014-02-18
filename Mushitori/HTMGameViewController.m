@@ -8,7 +8,7 @@
 
 #import "HTMGameViewController.h"
 #import "HTMKagoViewController.h"
-#import "HTMParam.h"
+#import "HTMGameState.h"
 
 
 @implementation HTMGameViewController
@@ -17,6 +17,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
+        // Custom initialization
     }
     return self;
 }
@@ -24,26 +25,24 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
 
+    // ゲーム初期化
+    [self initGame];
+    
     _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
                                                    target:self
                                                  selector:@selector(procMove:)
                                                  userInfo:nil repeats:YES];
 
-    // ゲーム初期化
-    [self initGame];
 }
 
 
-// ゲーム設定の初期化
+// ゲームの初期化
 -(void)initGame
 {
-    if (_param == nil)
-        _param = [[HTMParam alloc] init];
-    else
-        _param = [_param init];
-    
+    LOG_SIZE(self.view.frame.size);
+
+    // 画面の初期化
     _lblMsg.text = @"";
     _lblMsg.hidden = YES;
     _btnReTry.hidden = YES;
@@ -52,28 +51,34 @@
     _Cho.hidden = NO;
     _Hachi.hidden = YES;
     
-    _activeView = _Cho;
+    _activeBug = _Cho;
+
+    
+    // ゲームの状態管理クラスの初期化
+    if (_state == nil)
+        _state = [[HTMGameState alloc] init];
+    else
+        _state = [_state init];
+
+
+    // ゲーム開始時刻の初期化
+    _startDate = [NSDate date];
 }
 
 
 -(void)procMove:(NSTimer *)timer {
-    NSLog(@"ここで虫用のImageViewの位置を動かす");
-
     UIScreen *screen = [UIScreen mainScreen];
     CGRect rect = screen.applicationFrame;
-
-    NSLog(@"%.2f, %.2f", rect.size.width, rect.size.height);
     
-    //乱数発生
-    int x, y;
-    x = arc4random() % (int)rect.size.width;
-    y = arc4random() % (int)rect.size.height;
-    
+    //乱数によるX,Y座標設定
+    int x = arc4random() % (int)rect.size.width;
+    int y = arc4random() % ((int)rect.size.height - 100);
     CGPoint pos = CGPointMake(x, y);
+    _activeBug.center = pos;
 
-    _activeView.center = pos;
+    LOG_POINT(_activeBug.center);
+    
     _lblMsg.text = @"";
-
 }
 
 
@@ -90,7 +95,7 @@
     // 対象遷移のSegue取得
     if( [[segue identifier] isEqualToString:@"showKago"]) {
         HTMKagoViewController *kagoViewController = [segue destinationViewController];
-        kagoViewController.param = _param;
+        kagoViewController.state = _state;
     }
 }
 
@@ -104,14 +109,14 @@
     UITouch *touch = [[event allTouches] anyObject];
     switch (touch.view.tag) {
         case 1:
-            _param.cho = YES;
+            _state.haveCho = YES;
             _lblMsg.text = @"捕獲した！";
             _Cho.hidden = YES;
             _Hachi.hidden = NO;
-            _activeView = _Hachi;
+            _activeBug = _Hachi;
             break;
         case 2:
-            _param.hachi = YES;
+            _state.haveHachi = YES;
             _lblMsg.text = @"捕獲した！";
             _Hachi.hidden = YES;
             break;
@@ -120,23 +125,20 @@
     }
 
     // ゲームオーバーか判定
-    if (_param.isGameOver)
+    if (_state.isGameOver)
     {
         _lblMsg.text = @"Game Over";
         _btnReTry.hidden = NO;
         _btnReTry.enabled = YES;
+        _state.time = [[NSDate date] timeIntervalSinceDate:_startDate];
     }
     
     _lblMsg.hidden = NO;
-    
-    NSLog(@"Cho : %d", _param.cho);
-    NSLog(@"Hachi : %d", _param.hachi);
-    NSLog(@"Time : %@", _param.gameTime);
 }
 
 
 - (IBAction)onReTryClick:(id)sender {
-    NSLog(@"初期化してリトライ");
+    LOG(@"初期化してリトライ");
     [self initGame];
 }
 

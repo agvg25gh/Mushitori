@@ -6,33 +6,33 @@
 //  Copyright (c) 2014年 Team HTML. All rights reserved.
 //
 
-#import "HTMParam.h"
+#import "HTMGameState.h"
 
 
-@implementation HTMParam
+@implementation HTMGameState
 
 // プロパティ（アクセサ定義）
-@synthesize cho, hachi, tonbo, tento, suzume;
-@synthesize gameTime;
+@synthesize haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeHachi;
+@synthesize time;
 
 // 初期化（コンストラクタ）
 - (id) init
 {
     if (self = [super init]) {
-        cho = NO;
-        hachi = NO;
-        tonbo = NO;
-        tento = NO;
-        suzume = NO;
-        gameTime = @"";
+        haveCho = NO;
+        haveHachi = NO;
+        haveTonbo = NO;
+        haveTento = NO;
+        haveSuzumeHachi = NO;
+        time = 0;
     }
     return self;
 }
 
-// ゲームオーバー判定メソッド
+// ゲームオーバー判定
 - (BOOL) isGameOver
 {
-    if (cho && hachi)
+    if (haveCho && haveHachi)
         return YES;
     else
         return NO;

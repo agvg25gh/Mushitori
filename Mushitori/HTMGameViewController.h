@@ -7,13 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HTMParam.h"
+#import "HTMGameState.h"
 
 @interface HTMGameViewController : UIViewController {
     // インスタンス変数
-    HTMParam *_param;
+    HTMGameState *_state;
     NSTimer *_timer;
-    UIImageView *_activeView;
+    UIImageView *_activeBug;
+    NSDate *_startDate;
 }
 @property (strong, nonatomic) IBOutlet UIView *BaseView;
 @property (weak, nonatomic) IBOutlet UIImageView *Cho;

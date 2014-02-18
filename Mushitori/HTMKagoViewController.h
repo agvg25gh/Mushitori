@@ -7,11 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "HTMParam.h"
+#import "HTMGameState.h"
 
 @interface HTMKagoViewController : UIViewController
 - (IBAction)back:(UIButton *)sender;
 
-@property HTMParam *param;
+@property HTMGameState *state;
 
 @end
