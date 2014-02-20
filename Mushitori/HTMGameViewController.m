@@ -81,6 +81,17 @@
     LOG_POINT(_state.activeBug.center);
     
     _lblMsg.hidden = YES;
+
+    // ゲームオーバーか判定
+    if (_state.isGameOver)
+    {
+        _lblMsg.text = @"Game Over";
+        _lblMsg.hidden = NO;
+        _btnReTry.hidden = NO;
+//        _btnReTry.enabled = YES;
+        _state.time = [[NSDate date] timeIntervalSinceDate:_startDate];
+        [_timer invalidate];
+    }
 }
 
 
@@ -111,37 +122,26 @@
         case 1:
         {
             _state.haveCho = YES;
-            getBug(_lblMsg, _Hachi, _state, _Cho);
-            _state.activeBug = _Hachi;
+            getBug(_lblMsg, _state, _Cho, _Hachi);
             break;
         }
         case 2:
             _state.haveHachi = YES;
-            getBug(_lblMsg, _Tento, _state, _Hachi);
+            getBug(_lblMsg, _state, _Hachi, _Tento);
             _state.activeBug = _Tento;
             break;
         case 3:
             _state.haveTento = YES;
-            getBug(_lblMsg, _Suzume, _state, _Tento);
+            getBug(_lblMsg, _state, _Tento, _Suzume);
             _state.activeBug = _Suzume;
             break;
         case 4:
             _state.haveSuzumeHachi = YES;
-            getBug(_lblMsg, nil, _state, _Suzume);
+            getBug(_lblMsg, _state, _Suzume, nil);
             _state.activeBug = nil;
             break;
         default:
             break;
-    }
-
-    // ゲームオーバーか判定
-    if (_state.isGameOver)
-    {
-        _lblMsg.text = @"Game Over";
-        _btnReTry.hidden = NO;
-        _btnReTry.enabled = YES;
-        _state.time = [[NSDate date] timeIntervalSinceDate:_startDate];
-        [_timer invalidate];
     }
 }
 
@@ -153,9 +153,11 @@
 
 
 //
-void getBug(UILabel *lblMsg, UIImageView *nextBug, HTMGameState *state, UIImageView *currentBug)
+void getBug(UILabel *lblMsg, HTMGameState *state, UIImageView *currentBug, UIImageView *nextBug)
 {
+    lblMsg.text = @"捕まえた！";
     lblMsg.hidden = NO;
+
     [UIView animateWithDuration:0.2f // アニメーション速度1秒
                           delay:0.0 // すぐアニメ開始
                         options:UIViewAnimationOptionCurveEaseIn
@@ -169,7 +171,8 @@ void getBug(UILabel *lblMsg, UIImageView *nextBug, HTMGameState *state, UIImageV
                          
                          if (nextBug != nil)
                              nextBug.hidden = NO;
-                         
+
+                         state.activeBug = nextBug;
                      }];
 }
 
