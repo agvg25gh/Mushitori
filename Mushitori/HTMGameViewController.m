@@ -128,17 +128,14 @@
         case 2:
             _state.haveHachi = YES;
             getBug(_lblMsg, _state, _Hachi, _Tento);
-            _state.activeBug = _Tento;
             break;
         case 3:
             _state.haveTento = YES;
             getBug(_lblMsg, _state, _Tento, _Suzume);
-            _state.activeBug = _Suzume;
             break;
         case 4:
             _state.haveSuzumeHachi = YES;
             getBug(_lblMsg, _state, _Suzume, nil);
-            _state.activeBug = nil;
             break;
         default:
             break;
