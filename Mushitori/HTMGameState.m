@@ -11,9 +11,13 @@
 
 @implementation HTMGameState
 
+
 // プロパティ（アクセサ定義）
 @synthesize haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeHachi;
 @synthesize time;
+@synthesize activeBug;
+
+
 
 // 初期化（コンストラクタ）
 - (id) init
@@ -26,13 +30,14 @@
         haveSuzumeHachi = NO;
         time = 0;
     }
+    
     return self;
 }
 
 // ゲームオーバー判定
 - (BOOL) isGameOver
 {
-    if (haveCho && haveHachi)
+    if (activeBug == nil)
         return YES;
     else
         return NO;

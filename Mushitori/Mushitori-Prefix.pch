@@ -40,3 +40,12 @@
 - (NSString*)recursiveDescription;
 @end
 #endif
+
+
+// 虫毎のID
+typedef enum {
+    Cho,
+    Hachi,
+    Tento,
+    Suzume
+} BugEnum;

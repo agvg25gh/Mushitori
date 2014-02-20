@@ -30,6 +30,8 @@
 		BF4F196718A609CF00E8583F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF4F196518A609CF00E8583F /* InfoPlist.strings */; };
 		BF4F196A18A609CF00E8583F /* MushitoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F196918A609CF00E8583F /* MushitoriTests.m */; };
 		BF60B5C618A68B7400F5546E /* HTMGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60B5C518A68B7400F5546E /* HTMGameState.m */; };
+		BF87482218B6575700AFC752 /* suzume.png in Resources */ = {isa = PBXBuildFile; fileRef = BF87482118B6575700AFC752 /* suzume.png */; };
+		BF87482418B6576200AFC752 /* suzume_red.png in Resources */ = {isa = PBXBuildFile; fileRef = BF87482318B6576200AFC752 /* suzume_red.png */; };
 		BF91B98018AD38010035391F /* tento.png in Resources */ = {isa = PBXBuildFile; fileRef = BF91B97F18AD38010035391F /* tento.png */; };
 		BF91B98218AD382B0035391F /* hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BF91B98118AD382B0035391F /* hachi.png */; };
 /* End PBXBuildFile section */
@@ -77,6 +79,8 @@
 		BF4F196918A609CF00E8583F /* MushitoriTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MushitoriTests.m; sourceTree = "<group>"; };
 		BF60B5C418A68B7400F5546E /* HTMGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMGameState.h; sourceTree = "<group>"; };
 		BF60B5C518A68B7400F5546E /* HTMGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMGameState.m; sourceTree = "<group>"; };
+		BF87482118B6575700AFC752 /* suzume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suzume.png; sourceTree = "<group>"; };
+		BF87482318B6576200AFC752 /* suzume_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suzume_red.png; sourceTree = "<group>"; };
 		BF91B97F18AD38010035391F /* tento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tento.png; sourceTree = "<group>"; };
 		BF91B98118AD382B0035391F /* hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hachi.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +112,8 @@
 		BF279C7B18A620E60006C2A6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				BF87482318B6576200AFC752 /* suzume_red.png */,
+				BF87482118B6575700AFC752 /* suzume.png */,
 				BF91B98118AD382B0035391F /* hachi.png */,
 				BF91B97F18AD38010035391F /* tento.png */,
 				BF279C7318A6206D0006C2A6 /* back.png */,
@@ -275,10 +281,12 @@
 			files = (
 				BF4F194318A609CF00E8583F /* InfoPlist.strings in Resources */,
 				BF4F194B18A609CF00E8583F /* Default.png in Resources */,
+				BF87482218B6575700AFC752 /* suzume.png in Resources */,
 				BF4F194D18A609CF00E8583F /* Default@2x.png in Resources */,
 				BF4F194F18A609CF00E8583F /* Default-568h@2x.png in Resources */,
 				BF4F195218A609CF00E8583F /* MainStoryboard.storyboard in Resources */,
 				BF279C7418A6206D0006C2A6 /* back.png in Resources */,
+				BF87482418B6576200AFC752 /* suzume_red.png in Resources */,
 				BF91B98218AD382B0035391F /* hachi.png in Resources */,
 				BF91B98018AD38010035391F /* tento.png in Resources */,
 				BF279C7618A6207C0006C2A6 /* cyo.png in Resources */,

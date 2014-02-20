@@ -13,6 +13,8 @@
 // プロパティ
 @property BOOL haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeHachi;
 @property NSTimeInterval time;
+@property UIImageView *activeBug;
+
 
 // 初期化（コンストラクタ）
 - (id)init;

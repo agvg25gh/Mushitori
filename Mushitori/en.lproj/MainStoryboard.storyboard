@@ -147,21 +147,37 @@
                                     <action selector="onReTryClick:" destination="bZf-9K-JkO" eventType="touchUpInside" id="x9a-O3-WXJ"/>
                                 </connections>
                             </button>
+                            <imageView tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="tento.png" translatesAutoresizingMaskIntoConstraints="NO" id="X7A-zj-4jM">
+                                <rect key="frame" x="48" y="246" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="72" id="QCz-wI-Oq3"/>
+                                    <constraint firstAttribute="width" constant="72" id="boc-Gk-OFq"/>
+                                </constraints>
+                            </imageView>
+                            <imageView tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="suzume.png" translatesAutoresizingMaskIntoConstraints="NO" id="zfi-W1-Lvo">
+                                <rect key="frame" x="124" y="35" width="72" height="72"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="sa9-Ib-FiJ" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="246" id="22E-sq-mYk"/>
+                            <constraint firstItem="sa9-Ib-FiJ" firstAttribute="centerX" secondItem="zfi-W1-Lvo" secondAttribute="centerX" type="default" id="0tX-g0-Y9S"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="trailing" secondItem="JMO-eb-yjj" secondAttribute="trailing" type="default" id="4Ut-ug-MAo"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="leading" secondItem="JMO-eb-yjj" secondAttribute="leading" type="default" id="6EI-Yf-iol"/>
+                            <constraint firstItem="X7A-zj-4jM" firstAttribute="top" secondItem="sa9-Ib-FiJ" secondAttribute="top" type="default" id="7Oo-CE-dmL"/>
                             <constraint firstItem="vYf-Vp-Qfb" firstAttribute="leading" secondItem="JMO-eb-yjj" secondAttribute="leading" constant="40" id="7qn-Y4-YHq"/>
-                            <constraint firstAttribute="trailing" secondItem="GHK-ay-kOt" secondAttribute="trailing" constant="43" id="BCK-xT-zml"/>
+                            <constraint firstAttribute="trailing" secondItem="GHK-ay-kOt" secondAttribute="trailing" constant="43" id="8HO-JS-CH9"/>
+                            <constraint firstItem="X7A-zj-4jM" firstAttribute="leading" secondItem="JMO-eb-yjj" secondAttribute="leading" constant="48" id="DQ8-aQ-QNa"/>
                             <constraint firstItem="vYf-Vp-Qfb" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="114" id="EMJ-0E-Fp6"/>
                             <constraint firstItem="pVA-eQ-UIP" firstAttribute="bottom" secondItem="O7X-yg-5lg" secondAttribute="bottom" type="default" id="H9P-ZI-Sfh"/>
+                            <constraint firstItem="zfi-W1-Lvo" firstAttribute="centerX" secondItem="0Cb-8h-meT" secondAttribute="centerX" type="default" id="JGc-Aq-4lV"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="bottom" secondItem="JMO-eb-yjj" secondAttribute="bottom" type="default" id="LZ5-dd-aun"/>
+                            <constraint firstItem="zfi-W1-Lvo" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="35" id="Lqc-oV-Laz"/>
+                            <constraint firstItem="X7A-zj-4jM" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" constant="246" id="Xhz-In-SeB"/>
                             <constraint firstItem="0Cb-8h-meT" firstAttribute="top" secondItem="JMO-eb-yjj" secondAttribute="top" type="default" id="Yr8-3h-YVk"/>
                             <constraint firstAttribute="trailing" secondItem="O7X-yg-5lg" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="c21-tQ-4Ik"/>
                             <constraint firstItem="pVA-eQ-UIP" firstAttribute="leading" secondItem="JMO-eb-yjj" secondAttribute="leading" constant="31" id="f6f-e2-5ke"/>
-                            <constraint firstItem="sa9-Ib-FiJ" firstAttribute="centerX" secondItem="0Cb-8h-meT" secondAttribute="centerX" type="default" id="hDp-60-W9K"/>
                             <constraint firstItem="GHK-ay-kOt" firstAttribute="top" secondItem="vYf-Vp-Qfb" secondAttribute="top" type="default" id="qJi-n4-bJC"/>
                             <constraint firstAttribute="bottom" secondItem="pVA-eQ-UIP" secondAttribute="bottom" constant="20" symbolic="YES" type="default" id="y1o-JN-ekM"/>
                         </constraints>
@@ -170,6 +186,8 @@
                         <outlet property="BaseView" destination="JMO-eb-yjj" id="8wM-pL-3gw"/>
                         <outlet property="Cho" destination="vYf-Vp-Qfb" id="1VP-iY-V5G"/>
                         <outlet property="Hachi" destination="GHK-ay-kOt" id="1Bm-0Q-A0I"/>
+                        <outlet property="Suzume" destination="zfi-W1-Lvo" id="I9o-Q7-0gn"/>
+                        <outlet property="Tento" destination="X7A-zj-4jM" id="Y2h-tr-dNz"/>
                         <outlet property="btnReTry" destination="pVA-eQ-UIP" id="5fV-Vl-FeB"/>
                         <outlet property="lblMsg" destination="sa9-Ib-FiJ" id="uvL-IK-o6B"/>
                     </connections>
@@ -226,6 +244,8 @@
         <image name="back.png" width="640" height="960"/>
         <image name="cyo.png" width="72" height="72"/>
         <image name="hachi.png" width="72" height="72"/>
+        <image name="suzume.png" width="72" height="72"/>
+        <image name="tento.png" width="36" height="36"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

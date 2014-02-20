@@ -13,12 +13,13 @@
     // インスタンス変数
     HTMGameState *_state;
     NSTimer *_timer;
-    UIImageView *_activeBug;
     NSDate *_startDate;
 }
 @property (strong, nonatomic) IBOutlet UIView *BaseView;
 @property (weak, nonatomic) IBOutlet UIImageView *Cho;
 @property (weak, nonatomic) IBOutlet UIImageView *Hachi;
+@property (weak, nonatomic) IBOutlet UIImageView *Tento;
+@property (weak, nonatomic) IBOutlet UIImageView *Suzume;
 @property (weak, nonatomic) IBOutlet UILabel *lblMsg;
 @property (weak, nonatomic) IBOutlet UIButton *btnReTry;
 - (IBAction)onReTryClick:(id)sender;

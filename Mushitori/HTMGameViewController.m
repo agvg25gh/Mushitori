@@ -28,12 +28,6 @@
 
     // ゲーム初期化
     [self initGame];
-    
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
-                                                   target:self
-                                                 selector:@selector(procMove:)
-                                                 userInfo:nil repeats:YES];
-
 }
 
 
@@ -43,16 +37,15 @@
     LOG_SIZE(self.view.frame.size);
 
     // 画面の初期化
-    _lblMsg.text = @"";
+    _lblMsg.text = @"捕まえた！";
     _lblMsg.hidden = YES;
     _btnReTry.hidden = YES;
-    _btnReTry.enabled = NO;
     
-    _Cho.hidden = NO;
+    _Cho.hidden = YES;
     _Hachi.hidden = YES;
+    _Tento.hidden = YES;
+    _Suzume.hidden = YES;
     
-    _activeBug = _Cho;
-
     
     // ゲームの状態管理クラスの初期化
     if (_state == nil)
@@ -63,6 +56,15 @@
 
     // ゲーム開始時刻の初期化
     _startDate = [NSDate date];
+
+    // アクティブなキャラセット
+    _state.activeBug = _Cho;
+    _state.activeBug.hidden = NO;
+    
+    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                              target:self
+                                            selector:@selector(procMove:)
+                                            userInfo:nil repeats:YES];
 }
 
 
@@ -74,11 +76,11 @@
     int x = arc4random() % (int)rect.size.width;
     int y = arc4random() % ((int)rect.size.height - 100);
     CGPoint pos = CGPointMake(x, y);
-    _activeBug.center = pos;
+    _state.activeBug.center = pos;
 
-    LOG_POINT(_activeBug.center);
+    LOG_POINT(_state.activeBug.center);
     
-    _lblMsg.text = @"";
+    _lblMsg.hidden = YES;
 }
 
 
@@ -100,25 +102,33 @@
 }
 
 
-// 蝶捕獲イベント
+// イベント
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
 {
-    _lblMsg.hidden = YES;
-    _lblMsg.text = @"";
-    
+
     UITouch *touch = [[event allTouches] anyObject];
     switch (touch.view.tag) {
         case 1:
+        {
             _state.haveCho = YES;
-            _lblMsg.text = @"捕獲した！";
-            _Cho.hidden = YES;
-            _Hachi.hidden = NO;
-            _activeBug = _Hachi;
+            getBug(_lblMsg, _Hachi, _state, _Cho);
+            _state.activeBug = _Hachi;
             break;
+        }
         case 2:
             _state.haveHachi = YES;
-            _lblMsg.text = @"捕獲した！";
-            _Hachi.hidden = YES;
+            getBug(_lblMsg, _Tento, _state, _Hachi);
+            _state.activeBug = _Tento;
+            break;
+        case 3:
+            _state.haveTento = YES;
+            getBug(_lblMsg, _Suzume, _state, _Tento);
+            _state.activeBug = _Suzume;
+            break;
+        case 4:
+            _state.haveSuzumeHachi = YES;
+            getBug(_lblMsg, nil, _state, _Suzume);
+            _state.activeBug = nil;
             break;
         default:
             break;
@@ -131,15 +141,36 @@
         _btnReTry.hidden = NO;
         _btnReTry.enabled = YES;
         _state.time = [[NSDate date] timeIntervalSinceDate:_startDate];
+        [_timer invalidate];
     }
-    
-    _lblMsg.hidden = NO;
 }
 
 
+//
 - (IBAction)onReTryClick:(id)sender {
-    LOG(@"初期化してリトライ");
     [self initGame];
+}
+
+
+//
+void getBug(UILabel *lblMsg, UIImageView *nextBug, HTMGameState *state, UIImageView *currentBug)
+{
+    lblMsg.hidden = NO;
+    [UIView animateWithDuration:0.2f // アニメーション速度1秒
+                          delay:0.0 // すぐアニメ開始
+                        options:UIViewAnimationOptionCurveEaseIn
+                     animations:^{
+                         state.activeBug.transform = CGAffineTransformIdentity;
+                         state.activeBug.transform = CGAffineTransformMakeRotation(M_PI);
+                         state.activeBug.transform = CGAffineTransformMakeRotation(M_PI);
+                     } completion:^(BOOL finished) {
+                         // アニメーション終了時
+                         currentBug.hidden = YES;
+                         
+                         if (nextBug != nil)
+                             nextBug.hidden = NO;
+                         
+                     }];
 }
 
 @end
