@@ -13,7 +13,7 @@
 
 
 // プロパティ（アクセサ定義）
-@synthesize haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeHachi;
+@synthesize haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeBachi;
 @synthesize time;
 @synthesize activeBug;
 
@@ -27,7 +27,7 @@
         haveHachi = NO;
         haveTonbo = NO;
         haveTento = NO;
-        haveSuzumeHachi = NO;
+        haveSuzumeBachi = NO;
         time = 0;
     }
     

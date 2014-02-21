@@ -186,7 +186,7 @@
                         <outlet property="BaseView" destination="JMO-eb-yjj" id="8wM-pL-3gw"/>
                         <outlet property="Cho" destination="vYf-Vp-Qfb" id="1VP-iY-V5G"/>
                         <outlet property="Hachi" destination="GHK-ay-kOt" id="1Bm-0Q-A0I"/>
-                        <outlet property="Suzume" destination="zfi-W1-Lvo" id="I9o-Q7-0gn"/>
+                        <outlet property="SuzumeBachi" destination="zfi-W1-Lvo" id="hZT-sY-Eol"/>
                         <outlet property="Tento" destination="X7A-zj-4jM" id="Y2h-tr-dNz"/>
                         <outlet property="btnReTry" destination="pVA-eQ-UIP" id="5fV-Vl-FeB"/>
                         <outlet property="lblMsg" destination="sa9-Ib-FiJ" id="uvL-IK-o6B"/>

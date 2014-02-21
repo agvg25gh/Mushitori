@@ -44,7 +44,7 @@
     _Cho.hidden = YES;
     _Hachi.hidden = YES;
     _Tento.hidden = YES;
-    _Suzume.hidden = YES;
+    _SuzumeBachi.hidden = YES;
     
     
     // ゲームの状態管理クラスの初期化
@@ -131,11 +131,11 @@
             break;
         case 3:
             _state.haveTento = YES;
-            getBug(_lblMsg, _state, _Tento, _Suzume);
+            getBug(_lblMsg, _state, _Tento, _SuzumeBachi);
             break;
         case 4:
-            _state.haveSuzumeHachi = YES;
-            getBug(_lblMsg, _state, _Suzume, nil);
+            _state.haveSuzumeBachi = YES;
+            getBug(_lblMsg, _state, _SuzumeBachi, nil);
             break;
         default:
             break;
@@ -155,7 +155,7 @@ void getBug(UILabel *lblMsg, HTMGameState *state, UIImageView *currentBug, UIIma
     lblMsg.text = @"捕まえた！";
     lblMsg.hidden = NO;
 
-    [UIView animateWithDuration:0.2f // アニメーション速度1秒
+    [UIView animateWithDuration:0.2f // アニメーション速度
                           delay:0.0 // すぐアニメ開始
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{

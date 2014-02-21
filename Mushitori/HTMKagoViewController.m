@@ -32,7 +32,7 @@
     LOG(@"蜂フラグ：%d", self.state.haveHachi);
     LOG(@"トンボフラグ：%d", self.state.haveTonbo);
     LOG(@"テントウフラグ：%d", self.state.haveTento);
-    LOG(@"スズメ蜂フラグ：%d", self.state.haveSuzumeHachi);
+    LOG(@"スズメ蜂フラグ：%d", self.state.haveSuzumeBachi);
     LOG(@"タイム：%.1f 秒", self.state.time);
 }
 

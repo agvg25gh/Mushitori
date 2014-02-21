@@ -11,7 +11,7 @@
 @interface HTMGameState : NSObject
 
 // プロパティ
-@property BOOL haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeHachi;
+@property BOOL haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeBachi;
 @property NSTimeInterval time;
 @property UIImageView *activeBug;
 
