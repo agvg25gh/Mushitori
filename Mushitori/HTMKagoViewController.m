@@ -26,7 +26,22 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
+
+    _imageCyo.hidden = YES ;    //image を非表示
+    _imageHachi.hidden = YES ;    //image を非表示
+    _imageSuzume.hidden = YES ;    //image を非表示
+    _imageTento.hidden = YES ;    //image を非表示
+    _imageTonbo.hidden = YES ;    //image を非表示
+
+    if (state.haveCho) _imageCyo.hidden = NO ;    //image を表示
+    if (state.haveHachi) _imageHachi.hidden = NO ;    //image を表示
+    if (state.haveTento) _imageTento.hidden = NO ;    //image を表示
+    if (state.haveTonbo) _imageTonbo.hidden = NO ;    //image を表示
+    if (state.haveSuzumeBachi) _imageSuzume.hidden = NO ;    //image を表示
+	
+    NSString *timeShow = [NSString stringWithFormat:@"%.1f (秒)",state.time];
+    _timeText1.text = timeShow;
+    
     
     LOG(@"蝶フラグ：%d", self.state.haveCho);
     LOG(@"蜂フラグ：%d", self.state.haveHachi);
