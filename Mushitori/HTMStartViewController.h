@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface HTMStartViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIImageView *cyo;
+@property (weak, nonatomic) IBOutlet UIImageView *kaeru;
 
 @end

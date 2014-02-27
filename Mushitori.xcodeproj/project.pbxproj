@@ -8,10 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		BF1B738118A60A210063D355 /* HTMKagoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF1B738018A60A210063D355 /* HTMKagoViewController.m */; };
-		BF279C7418A6206D0006C2A6 /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BF279C7318A6206D0006C2A6 /* back.png */; };
-		BF279C7618A6207C0006C2A6 /* cyo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF279C7518A6207C0006C2A6 /* cyo.png */; };
-		BF279C7818A620880006C2A6 /* kago_cyo.png in Resources */ = {isa = PBXBuildFile; fileRef = BF279C7718A620880006C2A6 /* kago_cyo.png */; };
-		BF279C7A18A620930006C2A6 /* kago.png in Resources */ = {isa = PBXBuildFile; fileRef = BF279C7918A620930006C2A6 /* kago.png */; };
 		BF40165D18A60E4D00F52ACD /* HTMGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BF40165C18A60E4D00F52ACD /* HTMGameViewController.m */; };
 		BF4F193918A609CE00E8583F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4F193818A609CE00E8583F /* UIKit.framework */; };
 		BF4F193B18A609CE00E8583F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF4F193A18A609CE00E8583F /* Foundation.framework */; };
@@ -30,10 +26,21 @@
 		BF4F196718A609CF00E8583F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BF4F196518A609CF00E8583F /* InfoPlist.strings */; };
 		BF4F196A18A609CF00E8583F /* MushitoriTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BF4F196918A609CF00E8583F /* MushitoriTests.m */; };
 		BF60B5C618A68B7400F5546E /* HTMGameState.m in Sources */ = {isa = PBXBuildFile; fileRef = BF60B5C518A68B7400F5546E /* HTMGameState.m */; };
-		BF87482218B6575700AFC752 /* suzume.png in Resources */ = {isa = PBXBuildFile; fileRef = BF87482118B6575700AFC752 /* suzume.png */; };
-		BF87482418B6576200AFC752 /* suzume_red.png in Resources */ = {isa = PBXBuildFile; fileRef = BF87482318B6576200AFC752 /* suzume_red.png */; };
-		BF91B98018AD38010035391F /* tento.png in Resources */ = {isa = PBXBuildFile; fileRef = BF91B97F18AD38010035391F /* tento.png */; };
-		BF91B98218AD382B0035391F /* hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BF91B98118AD382B0035391F /* hachi.png */; };
+		BFD94BE118BF48840045BB1B /* back.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD218BF48840045BB1B /* back.png */; };
+		BFD94BE218BF48840045BB1B /* cyo.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD318BF48840045BB1B /* cyo.png */; };
+		BFD94BE318BF48840045BB1B /* hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD418BF48840045BB1B /* hachi.png */; };
+		BFD94BE418BF48840045BB1B /* kaeru.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD518BF48840045BB1B /* kaeru.png */; };
+		BFD94BE518BF48840045BB1B /* kago_cyo.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD618BF48840045BB1B /* kago_cyo.png */; };
+		BFD94BE618BF48840045BB1B /* kago_hachi.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD718BF48840045BB1B /* kago_hachi.png */; };
+		BFD94BE718BF48840045BB1B /* kago_kaeru.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD818BF48840045BB1B /* kago_kaeru.png */; };
+		BFD94BE818BF48840045BB1B /* kago_suzume.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BD918BF48840045BB1B /* kago_suzume.png */; };
+		BFD94BE918BF48840045BB1B /* kago_tento.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BDA18BF48840045BB1B /* kago_tento.png */; };
+		BFD94BEA18BF48840045BB1B /* kago_tonbo.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BDB18BF48840045BB1B /* kago_tonbo.png */; };
+		BFD94BEB18BF48840045BB1B /* kago.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BDC18BF48840045BB1B /* kago.png */; };
+		BFD94BEC18BF48840045BB1B /* suzume.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BDD18BF48840045BB1B /* suzume.png */; };
+		BFD94BED18BF48840045BB1B /* suzume2.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BDE18BF48840045BB1B /* suzume2.png */; };
+		BFD94BEE18BF48840045BB1B /* tento.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BDF18BF48840045BB1B /* tento.png */; };
+		BFD94BEF18BF48840045BB1B /* tonbo.png in Resources */ = {isa = PBXBuildFile; fileRef = BFD94BE018BF48840045BB1B /* tonbo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,10 +56,6 @@
 /* Begin PBXFileReference section */
 		BF1B737F18A60A210063D355 /* HTMKagoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMKagoViewController.h; sourceTree = "<group>"; };
 		BF1B738018A60A210063D355 /* HTMKagoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMKagoViewController.m; sourceTree = "<group>"; };
-		BF279C7318A6206D0006C2A6 /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
-		BF279C7518A6207C0006C2A6 /* cyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cyo.png; sourceTree = "<group>"; };
-		BF279C7718A620880006C2A6 /* kago_cyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_cyo.png; sourceTree = "<group>"; };
-		BF279C7918A620930006C2A6 /* kago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago.png; sourceTree = "<group>"; };
 		BF40165B18A60E4D00F52ACD /* HTMGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMGameViewController.h; sourceTree = "<group>"; };
 		BF40165C18A60E4D00F52ACD /* HTMGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMGameViewController.m; sourceTree = "<group>"; };
 		BF4F193518A609CE00E8583F /* Mushitori.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mushitori.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,10 +82,21 @@
 		BF4F196918A609CF00E8583F /* MushitoriTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MushitoriTests.m; sourceTree = "<group>"; };
 		BF60B5C418A68B7400F5546E /* HTMGameState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMGameState.h; sourceTree = "<group>"; };
 		BF60B5C518A68B7400F5546E /* HTMGameState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMGameState.m; sourceTree = "<group>"; };
-		BF87482118B6575700AFC752 /* suzume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suzume.png; sourceTree = "<group>"; };
-		BF87482318B6576200AFC752 /* suzume_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suzume_red.png; sourceTree = "<group>"; };
-		BF91B97F18AD38010035391F /* tento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tento.png; sourceTree = "<group>"; };
-		BF91B98118AD382B0035391F /* hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hachi.png; sourceTree = "<group>"; };
+		BFD94BD218BF48840045BB1B /* back.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = back.png; sourceTree = "<group>"; };
+		BFD94BD318BF48840045BB1B /* cyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cyo.png; sourceTree = "<group>"; };
+		BFD94BD418BF48840045BB1B /* hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hachi.png; sourceTree = "<group>"; };
+		BFD94BD518BF48840045BB1B /* kaeru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kaeru.png; sourceTree = "<group>"; };
+		BFD94BD618BF48840045BB1B /* kago_cyo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_cyo.png; sourceTree = "<group>"; };
+		BFD94BD718BF48840045BB1B /* kago_hachi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_hachi.png; sourceTree = "<group>"; };
+		BFD94BD818BF48840045BB1B /* kago_kaeru.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_kaeru.png; sourceTree = "<group>"; };
+		BFD94BD918BF48840045BB1B /* kago_suzume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_suzume.png; sourceTree = "<group>"; };
+		BFD94BDA18BF48840045BB1B /* kago_tento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_tento.png; sourceTree = "<group>"; };
+		BFD94BDB18BF48840045BB1B /* kago_tonbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago_tonbo.png; sourceTree = "<group>"; };
+		BFD94BDC18BF48840045BB1B /* kago.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = kago.png; sourceTree = "<group>"; };
+		BFD94BDD18BF48840045BB1B /* suzume.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suzume.png; sourceTree = "<group>"; };
+		BFD94BDE18BF48840045BB1B /* suzume2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = suzume2.png; sourceTree = "<group>"; };
+		BFD94BDF18BF48840045BB1B /* tento.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tento.png; sourceTree = "<group>"; };
+		BFD94BE018BF48840045BB1B /* tonbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tonbo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,14 +126,21 @@
 		BF279C7B18A620E60006C2A6 /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				BF87482318B6576200AFC752 /* suzume_red.png */,
-				BF87482118B6575700AFC752 /* suzume.png */,
-				BF91B98118AD382B0035391F /* hachi.png */,
-				BF91B97F18AD38010035391F /* tento.png */,
-				BF279C7318A6206D0006C2A6 /* back.png */,
-				BF279C7518A6207C0006C2A6 /* cyo.png */,
-				BF279C7918A620930006C2A6 /* kago.png */,
-				BF279C7718A620880006C2A6 /* kago_cyo.png */,
+				BFD94BD218BF48840045BB1B /* back.png */,
+				BFD94BD318BF48840045BB1B /* cyo.png */,
+				BFD94BD418BF48840045BB1B /* hachi.png */,
+				BFD94BD518BF48840045BB1B /* kaeru.png */,
+				BFD94BD618BF48840045BB1B /* kago_cyo.png */,
+				BFD94BD718BF48840045BB1B /* kago_hachi.png */,
+				BFD94BD818BF48840045BB1B /* kago_kaeru.png */,
+				BFD94BD918BF48840045BB1B /* kago_suzume.png */,
+				BFD94BDA18BF48840045BB1B /* kago_tento.png */,
+				BFD94BDB18BF48840045BB1B /* kago_tonbo.png */,
+				BFD94BDC18BF48840045BB1B /* kago.png */,
+				BFD94BDD18BF48840045BB1B /* suzume.png */,
+				BFD94BDE18BF48840045BB1B /* suzume2.png */,
+				BFD94BDF18BF48840045BB1B /* tento.png */,
+				BFD94BE018BF48840045BB1B /* tonbo.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -279,19 +300,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD94BE918BF48840045BB1B /* kago_tento.png in Resources */,
 				BF4F194318A609CF00E8583F /* InfoPlist.strings in Resources */,
+				BFD94BE818BF48840045BB1B /* kago_suzume.png in Resources */,
+				BFD94BEE18BF48840045BB1B /* tento.png in Resources */,
+				BFD94BE318BF48840045BB1B /* hachi.png in Resources */,
+				BFD94BE718BF48840045BB1B /* kago_kaeru.png in Resources */,
 				BF4F194B18A609CF00E8583F /* Default.png in Resources */,
-				BF87482218B6575700AFC752 /* suzume.png in Resources */,
+				BFD94BEC18BF48840045BB1B /* suzume.png in Resources */,
+				BFD94BE618BF48840045BB1B /* kago_hachi.png in Resources */,
+				BFD94BE218BF48840045BB1B /* cyo.png in Resources */,
+				BFD94BE418BF48840045BB1B /* kaeru.png in Resources */,
+				BFD94BE518BF48840045BB1B /* kago_cyo.png in Resources */,
+				BFD94BED18BF48840045BB1B /* suzume2.png in Resources */,
+				BFD94BE118BF48840045BB1B /* back.png in Resources */,
+				BFD94BEF18BF48840045BB1B /* tonbo.png in Resources */,
 				BF4F194D18A609CF00E8583F /* Default@2x.png in Resources */,
 				BF4F194F18A609CF00E8583F /* Default-568h@2x.png in Resources */,
+				BFD94BEB18BF48840045BB1B /* kago.png in Resources */,
 				BF4F195218A609CF00E8583F /* MainStoryboard.storyboard in Resources */,
-				BF279C7418A6206D0006C2A6 /* back.png in Resources */,
-				BF87482418B6576200AFC752 /* suzume_red.png in Resources */,
-				BF91B98218AD382B0035391F /* hachi.png in Resources */,
-				BF91B98018AD38010035391F /* tento.png in Resources */,
-				BF279C7618A6207C0006C2A6 /* cyo.png in Resources */,
-				BF279C7818A620880006C2A6 /* kago_cyo.png in Resources */,
-				BF279C7A18A620930006C2A6 /* kago.png in Resources */,
+				BFD94BEA18BF48840045BB1B /* kago_tonbo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
