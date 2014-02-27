@@ -44,6 +44,7 @@
     _Cho.hidden = YES;
     _Hachi.hidden = YES;
     _Tento.hidden = YES;
+    _Tonbo.hidden = YES;
     _SuzumeBachi.hidden = YES;
     
     
@@ -61,7 +62,7 @@
     _state.activeBug = _Cho;
     _state.activeBug.hidden = NO;
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+    _timer = [NSTimer scheduledTimerWithTimeInterval:0.7f
                                               target:self
                                             selector:@selector(procMove:)
                                             userInfo:nil repeats:YES];
@@ -131,11 +132,15 @@
             break;
         case 3:
             _state.haveTento = YES;
-            getBug(_lblMsg, _state, _Tento, _SuzumeBachi);
+            getBug(_lblMsg, _state, _Tento, _Tonbo);
             break;
         case 4:
+            _state.haveTonbo = YES;
+            getBug(_lblMsg, _state, _Tonbo, _SuzumeBachi);
+            break;
+        case 5:
             _state.haveSuzumeBachi = YES;
-            getBug(_lblMsg, _state, _SuzumeBachi, nil);
+            getBug(_lblMsg, _state, _Tonbo, nil);
             break;
         default:
             break;
