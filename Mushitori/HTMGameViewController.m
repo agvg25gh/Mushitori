@@ -40,6 +40,7 @@
     _lblMsg.text = @"捕まえた！";
     _lblMsg.hidden = YES;
     _btnReTry.hidden = YES;
+    _btnExit.hidden = YES;
 
     
     _Cho.hidden = YES;
@@ -63,7 +64,7 @@
     _state.activeBug = _Cho;
     _state.activeBug.hidden = NO;
     
-    _timer = [NSTimer scheduledTimerWithTimeInterval:0.7f
+    _timer = [NSTimer scheduledTimerWithTimeInterval:_state.frameRate
                                               target:self
                                             selector:@selector(procMove:)
                                             userInfo:nil repeats:YES];
@@ -87,9 +88,10 @@
     // ゲームオーバーか判定
     if (_state.isGameOver)
     {
-        _lblMsg.text = @"Game Over";
+        _lblMsg.text = @"Complete!!";
         _lblMsg.hidden = NO;
         _btnReTry.hidden = NO;
+        _btnExit.hidden = NO;
         _state.time = [[NSDate date] timeIntervalSinceDate:_startDate];
         [_timer invalidate];
     }
@@ -151,6 +153,12 @@
 //
 - (IBAction)onReTryClick:(id)sender {
     [self initGame];
+}
+
+
+//
+- (IBAction)onExitClick:(UIButton *)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 

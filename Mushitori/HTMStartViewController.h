@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTMGameState.h"
+
 
 @interface HTMStartViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *cyo;

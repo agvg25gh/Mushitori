@@ -12,7 +12,7 @@
 
 // プロパティ
 @property BOOL haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeBachi;
-@property NSTimeInterval time;
+@property NSTimeInterval time, frameRate;
 @property UIImageView *activeBug;
 
 

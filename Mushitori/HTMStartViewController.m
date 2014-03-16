@@ -7,6 +7,8 @@
 //
 
 #import "HTMStartViewController.h"
+#import "HTMOptionViewController.h"
+#import "HTMGameState.h"
 
 
 @implementation HTMStartViewController
@@ -15,6 +17,7 @@
 {
     [super viewDidLoad];
 
+    
     // 蝶のアニメーションのオプション
     UIViewAnimationOptions animeOptions =
     UIViewAnimationOptionCurveEaseInOut // イーズインアウト

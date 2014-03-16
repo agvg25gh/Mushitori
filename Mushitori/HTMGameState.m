@@ -14,7 +14,7 @@
 
 // プロパティ（アクセサ定義）
 @synthesize haveCho, haveHachi, haveTonbo, haveTento, haveSuzumeBachi;
-@synthesize time;
+@synthesize time, frameRate;
 @synthesize activeBug;
 
 
@@ -29,6 +29,7 @@
         haveTento = NO;
         haveSuzumeBachi = NO;
         time = 0;
+        frameRate = 1.0f;
     }
     
     return self;

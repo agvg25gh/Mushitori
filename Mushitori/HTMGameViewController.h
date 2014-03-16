@@ -23,6 +23,9 @@
 @property (weak, nonatomic) IBOutlet UIImageView *SuzumeBachi;
 @property (weak, nonatomic) IBOutlet UILabel *lblMsg;
 @property (weak, nonatomic) IBOutlet UIButton *btnReTry;
-- (IBAction)onReTryClick:(id)sender;
+@property (weak, nonatomic) IBOutlet UIButton *btnExit;
+
+- (IBAction)onReTryClick:(UIButton *)sender;
+- (IBAction)onExitClick:(UIButton *)sender;
 
 @end
