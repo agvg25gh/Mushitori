@@ -40,6 +40,7 @@
     _lblMsg.text = @"捕まえた！";
     _lblMsg.hidden = YES;
     _btnReTry.hidden = YES;
+
     
     _Cho.hidden = YES;
     _Hachi.hidden = YES;
@@ -89,7 +90,6 @@
         _lblMsg.text = @"Game Over";
         _lblMsg.hidden = NO;
         _btnReTry.hidden = NO;
-//        _btnReTry.enabled = YES;
         _state.time = [[NSDate date] timeIntervalSinceDate:_startDate];
         [_timer invalidate];
     }
@@ -164,9 +164,8 @@ void getBug(UILabel *lblMsg, HTMGameState *state, UIImageView *currentBug, UIIma
                           delay:0.0 // すぐアニメ開始
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
+                         state.activeBug.transform = CGAffineTransformMakeRotation(M_PI);
                          state.activeBug.transform = CGAffineTransformIdentity;
-                         state.activeBug.transform = CGAffineTransformMakeRotation(M_PI);
-                         state.activeBug.transform = CGAffineTransformMakeRotation(M_PI);
                      } completion:^(BOOL finished) {
                          // アニメーション終了時
                          currentBug.hidden = YES;
