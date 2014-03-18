@@ -2,7 +2,7 @@
 //  HTMParam.h
 //  Mushitori
 //
-//  Created by あき on 2014/02/09.
+//  Created by Team HTML on 2014/02/09.
 //  Copyright (c) 2014年 Team HTML. All rights reserved.
 //
 

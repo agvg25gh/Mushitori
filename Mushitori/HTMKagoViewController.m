@@ -2,7 +2,7 @@
 //  HTMKagoViewController.m
 //  Mushitori
 //
-//  Created by あき on 14/02/08.
+//  Created by Team HTML on 14/02/08.
 //  Copyright (c) 2014年 Team HTML. All rights reserved.
 //
 
